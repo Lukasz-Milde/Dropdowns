@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  <link rel="stylesheet" href="scss/main.scss">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+  <script defer src="app.js" type="module"></script>
+</head>
+
+<body class="body">
+  <img class="snap-logo" src="../images/logo.svg" alt="logo">
+  <nav class="navigation-bar">
+    <ul>
+      <li class=" dropdown"> Features <img class="arrow" src="../images/icon-arrow-down.svg" alt="arrow icon">
+        <div class="dropdown-menu">
+          <ul>
+            <li><img src="../images/icon-todo.svg" alt="todo icon">
+              <p> Todo List </p>
+            </li>
+            <li> <img src="../images/icon-calendar.svg" alt="calendar icon">
+              <p> Calendar</p>
+            </li>
+            <li> <img src="../images/icon-reminders.svg" alt="reminder icon">
+              <p> Reminders</p>
+            </li>
+            <li><img src="../images/icon-planning.svg" alt="planning icon">
+              <p> Planning </p>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class=" dropdown">Company <img class="arrow" src="../images/icon-arrow-down.svg" alt="arrow icon">
+        <div class="dropdown-menu">
+          <ul>
+            <li>History</li>
+            <li>Our Team</li>
+            <li>Blog</li>
+          </ul>
+        </div>
+      </li>
+      <li>Careers</li>
+      <li>About</li>
+    </ul>
+    <ul id="mobile-register">
+      <li>Login</li>
+      <button class="register">Register</button>
+    </ul>
+  </nav>
+  <button class="toggle-btn" id="toggle-btn"></button>
+
+  <main class="main">
+    <section class="text-container">
+      <h1> Make <br> remote work</h1>
+      <p>
+        Get your team in sync, no matter your location. Streamline processes,
+        create team rituals, and watch productivity soar.
+      </p>
+      <button class="learn-btn">Learn more</button>
+      <ul class="logos">
+        <li><img src="../images/client-databiz.svg" alt="databiz-logo"></li>
+        <li><img src="../images/client-audiophile.svg" alt="audiophile-logo"></li>
+        <li><img src="../images/client-meet.svg" alt="meet-logo"></li>
+        <li><img src="../images/client-maker.svg" alt="maker-logo"></li>
+      </ul>
+    </section>
+    <div class="image-container"></div>
+  </main>
+
+</body>
+
+</html>
